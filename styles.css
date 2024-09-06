@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffe0e6;
+    color: #333;
+}
+
+header {
+    background-color: #ffafc0;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.header-image {
+    width: 100%;
+    height: auto;
+}
+
+
+.about, .introduction {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 45%;
+}
+
+
+.intro-image {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+footer {
+    position: fixed; /* 固定定位 */
+    left: 0; /* 左侧对齐 */
+    bottom: 0; /* 底部对齐 */
+    width: 100%; /* 宽度占满页面 */
+    text-align: center; /* 文字居中 */
+    padding: 10px; /* 上下内边距 */
+    background-color: #ffafc0; /* 设置背景颜色 */
+    border-top: 1px solid #ddd; /* 顶部边框 */
+    box-sizing: border-box; /* 包含内边距在内的宽度计算 */
+}
+
+
+.banner {
+    width: 100%; /* 将宽度设置为100%，占满父容器 */
+    padding: 20px; /* 给上下增加一些内边距 */
+    background-color: #ffafc0; /* 设置背景颜色，可以根据需要更改 */
+    text-align: center; /* 使文字水平居中 */
+    font-size: 24px; /* 设置文字大小 */
+    font-weight: bold; /* 设置文字加粗 */
+    border-bottom: 2px solid #ddd; /* 添加底部边框，作为装饰 */
+    box-sizing: border-box; /* 使padding不会影响整体宽度 */
+}
+
+.content-area {
+    display: flex; /* 设置为水平布局 */
+    align-items: center; /* 垂直居中对齐 */
+    gap: 20px; /* 设置图片与文字之间的间距 */
+}
+
+.content-image img {
+    width: 300px; /* 设置图片宽度 */
+    height: 300px; /* 设置图片高度 */
+    object-fit: cover; /* 确保图片保持比例并填满区域 */
+}
+
+.content-text {
+    flex: 1; /* 让文字区域自适应宽度 */
+}
+
+h2 {
+    margin: 0; /* 移除默认的标题外边距 */
+    font-size: 24px; /* 设置标题大小 */
+    font-weight: bold; /* 设置标题加粗 */
+}
+
+p {
+    margin-top: 10px; /* 设置段落的上边距 */
+    font-size: 16px; /* 设置段落文字大小 */
+}
+.photo-gallery {
+    display: flex; /* 使用 Flexbox 布局 */
+    justify-content: space-between; /* 让照片之间保持均匀的间隔 */
+    gap: 1px; /* 图片之间的间距 */
+    flex-wrap: wrap; /* 当视口宽度不够时，图片自动换行 */
+}
+
+.photo-gallery img {
+    width: 300px; /* 设置图片宽度 */
+    height: 300px; /* 设置图片高度 */
+    object-fit: cover; /* 确保图片以合适比例填满区域 */
+    border: 2px solid #ddd; /* 为图片添加边框 */
+    border-radius: 8px; /* 可选：为图片添加圆角 */
+}
