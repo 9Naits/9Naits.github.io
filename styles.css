@@ -106,6 +106,7 @@ p {
     margin-top: 10px; /* 设置段落的上边距 */
     font-size: 16px; /* 设置段落文字大小 */
 }
+
 .photo-gallery {
     display: flex; /* 使用 Flexbox 布局 */
     justify-content: space-between; /* 让照片之间保持均匀的间隔 */
@@ -119,4 +120,17 @@ p {
     object-fit: cover; /* 确保图片以合适比例填满区域 */
     border: 2px solid #ddd; /* 为图片添加边框 */
     border-radius: 8px; /* 可选：为图片添加圆角 */
+}
+
+.image-area {
+    width: 100%; /* 父容器宽度设置为100%，占满屏幕 */
+    height: auto; /* 可选：根据内容调整高度 */
+    overflow: hidden; /* 当内容过大时，隐藏溢出的部分 */
+}
+
+.image-area img {
+    width: 100%; /* 图片宽度自适应父容器 */
+    height: 300px; /* 保持图片比例 */
+    object-fit: cover; /* 可选：使图片覆盖整个容器 */
+    display: block; /* 去除图片底部可能出现的空隙 */
 }
