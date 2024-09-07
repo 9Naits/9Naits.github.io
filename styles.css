@@ -41,10 +41,29 @@ main {
     height: auto;
 }
 
+.rectangle-background {
+    display: inline-block; /* 根据内容自适应宽度 */
+    background-color: white; /* 设置背景为白色 */
+    border: 1px solid #ccc; /* 可选，添加边框 */
+    padding: 10px; /* 添加内边距以避免文字靠边 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 可选，添加阴影效果 */
+    margin-top: 20px; /* 调整与其他内容的间距 */
+    max-width: 100%; /* 限制宽度，避免超出父容器 */
+    word-wrap: break-word; /* 强制长单词换行，保持在容器内 */
+}
 
-.about, .introduction {
+
+
+.about{
     background-color: white;
-    padding: 20px;
+    padding: 50px;
+    border-radius: 8px;
+    width: 45%;
+}
+
+.introduction {
+    background-color: white;
+    padding: 50px;
     border-radius: 8px;
     width: 45%;
 }
